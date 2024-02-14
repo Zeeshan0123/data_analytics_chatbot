@@ -1,0 +1,39 @@
+Query Engine --------------------------------------------------------------------------
+
+===> Query String -> Retriever -> Node PostProcessor -> Response Synthesizer -> Response
+----------------------------------------------------------------------------------------
+
+Retrievers:(it will gives you nodes)
+Types of retrivals:
+- index.as_retriever()
+- VectorindexAutoRetriever
+- KnowledgeGraphRAGRetriever
+- RecursiveRetriever
+- AutoMergingRetriver
+- BM25Retriever
+- VectorRetriever
+....and more
+
+
+Node Postprocessors:(Modify and parse the output nodes from a retriever)
+Types:
+- SimilarityPostprocessor            |     FixedRecencyPostprocesor
+- KeywordNodePostprocessor           |     EmbeddingRecencyPostprocessor
+- MetadataReplacementPostProcessor   |     TimeWeightedPostprocessor
+- SentenceEmbeddingOptimizer         |     PllNodePostprocessor
+- CohereRerank                       |     PrevNextNodePostprocessor
+- SentenceTransformerRerank          |     AutoPrevNextNodePostprocessor
+- LLMRerank                          |
+
+
+--> Adding a meta data to chunks helps the similarity search each answer 
+chunk also has the meta data
+
+-->In the TitleExtractor, nodes=5 means that the extractor will consider the first 5 nodes (or sections) of the document when generating a title. This is useful when you have a long document and you want to generate a title based on the initial part of the document.
+
+In the QuestionsAnsweredExtractor, questions=3 means that the extractor will generate 3 questions that the document or section can answer. This is useful for understanding the key points or topics covered in the document or section.
+
+
+Meditron:
+--> meditron context length is 2000 tokens
+--> data upto August 2023
