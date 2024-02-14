@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=qmcOlGCjQyg
+https://www.youtube.com/watch?v=PFpnXOrnJSs
+
+https://medium.com/@ashu.goel_9925/understanding-text-chunking-for-the-llm-application-da59cbc2855b                          this is basically for chunking

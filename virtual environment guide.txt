@@ -1,0 +1,20 @@
+---------------------------- guide for virtual environment --------------------
+
+first create a conda virtual environment that is saved in D:\Anaconda\envs  lets suppose test is the new environment
+
+add these two paths to PC environment viriables
+D:\Anaconda
+D:\Anaconda\Scripts
+
+some times in vs code conda is not activated due to sme issues then write this command to activate your Anaconda on vs code terminal D:\Anaconda\Scripts\activate 
+after that you will this (base) is the start of your terminal
+Now your all anaconda commands are working properly like conda create etc
+
+After creating a virtual environment in  D:\Anaconda\envs for example test  still then test environment is not showing in vs code now you have to add a new path in your
+PC environment
+ 
+if you want to use it in vs_code then add their path in  PC environment like D:\Anaconda\envs\test\Scripts
+
+-------------------------------  very very important point --------------------------
+
+In vs_code always use command prompt because instead of powershell ok always remember because in powershell all commands are giving you error
