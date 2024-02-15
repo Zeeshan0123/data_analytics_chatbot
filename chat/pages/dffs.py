@@ -15,7 +15,7 @@ from llama_index import (
 from llama_index import download_loader
 from pathlib import Path
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = ''
 # os.environ['GOOGLE_API_KEY'] = 'AIzaSyDkU4f8ZGCSk8klzgaplc-ODrYOc6wmQCU'
 df = st.session_state['df'] # updated dataframe
 
